@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Prakash | CSE Student & Data Scientist</title>
+  <meta name="description" content="Portfolio of Aditya Prakash, Computer Science & Engineering student specializing in Data Science, AI/ML, and DevOps. Learn about my tech stack, projects, and goals.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Dynamic Neural Network Background Canvas -->
+  <canvas id="neural-canvas"></canvas>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-prefix">AP</span>.dev
+      </a>
+      <nav class="nav-links">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#specialties" class="nav-item">Specialties</a>
+        <a href="#skills" class="nav-item">Skills</a>
+        <a href="#contact" class="nav-item btn-primary-sm">Get In Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-content">
+        <div class="tagline">COMPUTER SCIENCE & ENGINEERING STUDENT</div>
+        <h1 class="hero-title">Aditya Prakash</h1>
+        <p class="hero-subtitle">
+          Specializing in <span class="highlight-ds">Data Science</span>, <span class="highlight-ai">AI/ML</span>, and <span class="highlight-devops">DevOps</span>. 
+          Building smart, reliable, and scalable digital workflows.
+        </p>
+        <div class="hero-actions">
+          <a href="#specialties" class="btn-primary">Explore My Work</a>
+          <a href="#contact" class="btn-secondary">Let's Connect</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section container" id="about">
+      <h2 class="section-title">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-card glass">
+          <div class="card-glow"></div>
+          <h3>The Mindset</h3>
+          <p>
+            As a B.Tech student with a hyper-focused specialization in **Data Science**, I look at code through the lens of data integrity, model robustness, and reproducible environment deployment. 
+          </p>
+          <p>
+            I bridge the gap between rigorous mathematical models (AI/ML) and solid software infrastructure (DevOps) using highly structured frameworks and automated pipelines.
+          </p>
+        </div>
+        <div class="about-stats glass">
+          <div class="stat-item">
+            <span class="stat-number highlight-ds">DS</span>
+            <span class="stat-label">Data Science & Analytics</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number highlight-ai">AI</span>
+            <span class="stat-label">Machine Learning & LLMs</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number highlight-devops">∞</span>
+            <span class="stat-label">DevOps & Automation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section class="section container" id="specialties">
+      <h2 class="section-title">Areas of Expertise</h2>
+      <div class="specialties-grid">
+        
+        <!-- Specialty Card 1 -->
+        <div class="spec-card glass">
+          <div class="spec-icon ds-icon">📊</div>
+          <h3>Data Science & Analytics</h3>
+          <p>Analyzing complex datasets, designing visualization workflows, and drawing intelligence using structured statistical analysis.</p>
+          <ul class="spec-list">
+            <li>NumPy & Pandas Processing</li>
+            <li>Matplotlib & Seaborn Plots</li>
+            <li>SQL Database Orchestration</li>
+          </ul>
+        </div>
+
+        <!-- Specialty Card 2 -->
+        <div class="spec-card glass">
+          <div class="spec-icon ai-icon">🧠</div>
+          <h3>AI & Machine Learning</h3>
+          <p>Developing predictive models, evaluating validation parameters, and exploring large language model orchestration.</p>
+          <ul class="spec-list">
+            <li>Scikit-Learn Classifiers</li>
+            <li>TensorFlow Neural Nets</li>
+            <li>Advanced Prompt Engineering</li>
+          </ul>
+        </div>
+
+        <!-- Specialty Card 3 -->
+        <div class="spec-card glass">
+          <div class="spec-icon devops-icon">⚙️</div>
+          <h3>DevOps & Infrastructure</h3>
+          <p>Applying automated containerized deployments, local environment management, and cloud orchestration practices.</p>
+          <ul class="spec-list">
+            <li>Docker Containerization</li>
+            <li>Linux System Engineering</li>
+            <li>Git & GitHub Pipelines</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interactive Skills Section -->
+    <section class="section container" id="skills">
+      <h2 class="section-title">My Tech Stack</h2>
+      <div class="skills-filter-container">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="lang">Languages</button>
+          <button class="filter-btn" data-filter="data">Data & ML</button>
+          <button class="filter-btn" data-filter="ops">DevOps & Systems</button>
+        </div>
+        
+        <div class="skills-grid">
+          <!-- Languages -->
+          <div class="skill-tag glass" data-category="lang">
+            <span class="skill-name">Python</span>
+          </div>
+          <div class="skill-tag glass" data-category="lang">
+            <span class="skill-name">C++</span>
+          </div>
+          <div class="skill-tag glass" data-category="lang">
+            <span class="skill-name">SQL</span>
+          </div>
+          <div class="skill-tag glass" data-category="lang">
+            <span class="skill-name">Prompt Engineering</span>
+          </div>
+
+          <!-- Data & ML -->
+          <div class="skill-tag glass" data-category="data">
+            <span class="skill-name">NumPy</span>
+          </div>
+          <div class="skill-tag glass" data-category="data">
+            <span class="skill-name">Pandas</span>
+          </div>
+          <div class="skill-tag glass" data-category="data">
+            <span class="skill-name">Scikit-Learn</span>
+          </div>
+          <div class="skill-tag glass" data-category="data">
+            <span class="skill-name">TensorFlow</span>
+          </div>
+          <div class="skill-tag glass" data-category="data">
+            <span class="skill-name">Matplotlib</span>
+          </div>
+
+          <!-- DevOps -->
+          <div class="skill-tag glass" data-category="ops">
+            <span class="skill-name">Docker</span>
+          </div>
+          <div class="skill-tag glass" data-category="ops">
+            <span class="skill-name">Linux / Bash</span>
+          </div>
+          <div class="skill-tag glass" data-category="ops">
+            <span class="skill-name">Git & GitHub</span>
+          </div>
+          <div class="skill-tag glass" data-category="ops">
+            <span class="skill-name">CI/CD Workflows</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section container" id="contact">
+      <div class="contact-box glass">
+        <h2 class="section-title text-center">Let's Build Something Together</h2>
+        <p class="contact-desc">
+          I'm currently seeking internships, collaborative research opportunities, and open-source partnerships. Connect with me directly!
+        </p>
+        <div class="contact-methods">
+          <a href="mailto:adityaorinal@gmail.com" class="contact-btn email-btn">
+            <span class="icon">📧</span>
+            <span class="btn-text">adityaorinal@gmail.com</span>
+            <span class="action-tag">Copy Email</span>
+          </a>
+          <a href="https://www.linkedin.com/in/aditya-prakash-36792a375" target="_blank" rel="noopener noreferrer" class="contact-btn linkedin-btn">
+            <span class="icon">💼</span>
+            <span class="btn-text">LinkedIn Profile</span>
+            <span class="action-tag">Visit</span>
+          </a>
+        </div>
+        <div class="copy-toast" id="toast">Email Copied to Clipboard!</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Aditya Prakash. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/aditya-dev06" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/aditya-prakash-36792a375" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
