@@ -110,28 +110,45 @@ fun_fact: "I can prompt-engineer an AI faster than I can cook instant noodles �
 
 <br/>
 
-<!-- AREAS OF EXPERTISE -->
-## 🎯 &nbsp;Areas of Expertise
+<!-- AREAS I'M EXPLORING -->
+## 🎯 &nbsp;Areas I'm Exploring
 
 <table align="center">
   <tr>
     <td align="center" width="33%">
       <img src="https://img.shields.io/badge/-📊_Data_Science-0d1117?style=flat-square" alt="DS" /><br/>
       <sub><b>Data Science & Analytics</b></sub><br/><br/>
-      <sub>Analyzing complex datasets,<br/>building statistical models,<br/>and creating impactful<br/>data visualizations</sub>
+      <sub>Learning to work with<br/>real-world datasets, writing<br/>Python scripts for analysis,<br/>and building visualizations</sub>
     </td>
     <td align="center" width="33%">
       <img src="https://img.shields.io/badge/-🧠_AI_/_ML-0d1117?style=flat-square" alt="AI" /><br/>
-      <sub><b>Artificial Intelligence</b></sub><br/><br/>
-      <sub>Training neural networks,<br/>developing ML pipelines,<br/>and crafting advanced<br/>prompt engineering workflows</sub>
+      <sub><b>AI & Machine Learning</b></sub><br/><br/>
+      <sub>Studying neural networks,<br/>experimenting with ML models<br/>in class projects, and<br/>practicing prompt engineering</sub>
     </td>
     <td align="center" width="33%">
       <img src="https://img.shields.io/badge/-⚙️_DevOps-0d1117?style=flat-square" alt="DevOps" /><br/>
       <sub><b>DevOps & Automation</b></sub><br/><br/>
-      <sub>Containerizing applications,<br/>automating CI/CD pipelines,<br/>and managing Linux<br/>infrastructure</sub>
+      <sub>Getting hands-on with<br/>Docker, learning Git workflows,<br/>and exploring CI/CD<br/>and Linux basics</sub>
     </td>
   </tr>
 </table>
+
+<br/>
+
+<!-- AUTO-GENERATED: Skills & activity pulled directly from my repos -->
+## 📈 &nbsp;My GitHub at a Glance
+
+> 🤖 *These cards are auto-generated from my repositories — as I push more code, they update automatically!*
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aditya-dev06&theme=github_dark" alt="Profile Details" width="100%"/>
+</div>
+
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=aditya-dev06&theme=github_dark" alt="Repos per Language" width="32%"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=aditya-dev06&theme=github_dark" alt="Most Commit Language" width="32%"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=aditya-dev06&theme=github_dark&utcOffset=5.5" alt="Productive Time" width="32%"/>
+</div>
 
 <br/>
 
