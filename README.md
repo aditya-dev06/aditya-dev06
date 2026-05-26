@@ -43,10 +43,12 @@ fun_fact: "I can prompt-engineer an AI faster than I can cook instant noodles �
 <br/>
 
 <!-- TECH STACK -->
-## 🛠️ &nbsp;Tech Stack
+## 📚 &nbsp;Currently Learning & Building With
+
+> 🌱 *These are the technologies I'm actively learning and exploring as part of my journey in Data Science, AI/ML, and DevOps.*
 
 <details open>
-<summary><b>&nbsp;&nbsp;🐍 Languages & Core</b></summary>
+<summary><b>&nbsp;&nbsp;🐍 Learning — Languages & Core</b></summary>
 <br/>
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
@@ -58,7 +60,7 @@ fun_fact: "I can prompt-engineer an AI faster than I can cook instant noodles �
 </details>
 
 <details open>
-<summary><b>&nbsp;&nbsp;🧠 AI / ML & Data Science</b></summary>
+<summary><b>&nbsp;&nbsp;🧠 Learning — AI / ML & Data Science</b></summary>
 <br/>
 <p align="center">
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
@@ -71,7 +73,7 @@ fun_fact: "I can prompt-engineer an AI faster than I can cook instant noodles �
 </details>
 
 <details open>
-<summary><b>&nbsp;&nbsp;⚙️ DevOps & Tools</b></summary>
+<summary><b>&nbsp;&nbsp;⚙️ Learning — DevOps & Tools</b></summary>
 <br/>
 <p align="center">
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
