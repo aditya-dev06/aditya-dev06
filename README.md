@@ -1,104 +1,188 @@
+<!-- HEADER -->
 <div align="center">
-  <img src="./header.svg" alt="Aditya Prakash Header" width="100%" />
+  <img src="./header.svg" alt="Aditya Prakash – CSE Student | Data Science | AI/ML | DevOps" width="100%" />
 </div>
 
-<br />
+<br/>
 
+<!-- TYPING ANIMATION -->
 <div align="center">
-  <h3>👋 Hello, I'm Aditya Prakash!</h3>
-  <p><strong>Computer Science & Engineering Student specializing in Data Science</strong></p>
-  <p>
-    <a href="https://www.linkedin.com/in/aditya-prakash-36792a375"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-    <a href="mailto:adityaorinal@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-  </p>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=8B5CF6&center=true&vCenter=true&multiline=true&repeat=true&width=700&height=55&lines=Building+intelligent+systems+with+data+%26+code+%F0%9F%A7%A0;CSE+Student+%7C+Data+Science+%7C+AI%2FML+%7C+DevOps+%E2%9A%99%EF%B8%8F" alt="Typing SVG" /></a>
 </div>
 
----
+<br/>
 
-### 📖 About Me
+<!-- SOCIAL BADGES ROW -->
+<div align="center">
+  <a href="https://www.linkedin.com/in/aditya-prakash-36792a375"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>&nbsp;
+  <a href="mailto:adityaorinal@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>&nbsp;
+  <a href="https://github.com/aditya-dev06"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>&nbsp;
+  <img src="https://komarev.com/ghpvc/?username=aditya-dev06&style=for-the-badge&color=8b5cf6&label=PROFILE+VIEWS" alt="Profile Views"/>
+</div>
 
-I am a passionate Computer Science student focusing heavily on the intersection of **AI/ML**, **Data Science**, and modern **DevOps** engineering. I love translating raw data into actionable intelligence, building optimized and reproducible pipelines, and mastering cutting-edge engineering tools.
+<br/>
 
-* 🎓 **Education:** Pursuing B.Tech in Computer Science & Engineering (Data Science Specialization)
-* 🚀 **Currently Deep Diving Into:** Distributed Training, Neural Networks, Docker, and CI/CD Automation
-* 💡 **Strengths:** Python, C++, Data Visualizations, Prompt Engineering, and System Workflows
+<!-- ABOUT ME -->
+## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28"> &nbsp;About Me
 
----
+```yaml
+name: Aditya Prakash
+located_in: India
+education: B.Tech in CSE (Data Science Specialization)
+current_focus:
+  - "🧠 AI / Machine Learning"
+  - "📊 Data Science & Analytics"
+  - "⚙️ DevOps & Infrastructure Automation"
+  - "✨ Prompt Engineering & LLM Orchestration"
 
-### ⚙️ Core Specialties & Tech Stack
+strengths: ["Python", "C++", "Prompt Engineering", "Data Visualization"]
+currently_learning: ["Docker", "CI/CD Pipelines", "Neural Networks", "Distributed Training"]
+fun_fact: "I can prompt-engineer an AI faster than I can cook instant noodles 🍜"
+```
+
+<br/>
+
+<!-- TECH STACK -->
+## 🛠️ &nbsp;Tech Stack
 
 <details open>
-  <summary><strong>🐍 Programming & Data Science Core</strong></summary>
-  <br />
-  <p>
-    <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python" />
-    <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" alt="C++" />
-    <img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy" />
-    <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="Pandas" />
-    <img src="https://img.shields.io/badge/Matplotlib-ffffff?style=flat-square&logo=matplotlib&logoColor=black" alt="Matplotlib" />
-    <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=postgresql&logoColor=white" alt="SQL" />
-  </p>
-  <p>
-    Focused on algorithms, efficient data manipulation, and building scalable data analytical models using Python and C++.
-  </p>
+<summary><b>&nbsp;&nbsp;🐍 Languages & Core</b></summary>
+<br/>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white"/>
+</p>
 </details>
 
-<details>
-  <summary><strong>🧠 Artificial Intelligence & Machine Learning</strong></summary>
-  <br />
-  <p>
-    <img src="https://img.shields.io/badge/Scikit_Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" alt="Scikit-Learn" />
-    <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white" alt="TensorFlow" />
-    <img src="https://img.shields.io/badge/Prompt_Engineering-4A154B?style=flat-square&logo=slack&logoColor=white" alt="Prompt Engineering" />
-  </p>
-  <p>
-    Developing models for supervised/unsupervised learning, custom model evaluation, and leveraging LLMs through advanced Prompt Engineering techniques to optimize model performance and orchestrate intelligent workflows.
-  </p>
+<details open>
+<summary><b>&nbsp;&nbsp;🧠 AI / ML & Data Science</b></summary>
+<br/>
+<p align="center">
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=plotly&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white"/>
+</p>
 </details>
 
-<details>
-  <summary><strong>♾️ DevOps & System Engineering</strong></summary>
-  <br />
-  <p>
-    <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git" />
-    <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker" />
-    <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux" />
-    <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=github-actions&logoColor=white" alt="GitHub Actions" />
-  </p>
-  <p>
-    Learning containerization, setting up consistent local development environments, automating build pipelines, and managing server infrastructure.
-  </p>
+<details open>
+<summary><b>&nbsp;&nbsp;⚙️ DevOps & Tools</b></summary>
+<br/>
+<p align="center">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"/>
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/>
+  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white"/>
+</p>
 </details>
 
----
+<br/>
 
-### 📊 GitHub Activity & Insights
+<!-- GITHUB STATS -->
+## 📊 &nbsp;GitHub Analytics
 
 <div align="center">
-  <table border="0">
-    <tr>
-      <td width="50%" align="center">
-        <img src="https://github-readme-stats.vercel.app/api?username=aditya-dev06&show_icons=true&theme=slate&count_private=true&hide_border=true&bg_color=0f172a&title_color=38bdf8&icon_color=f59e0b&text_color=94a3b8" alt="GitHub Stats" width="400" />
-      </td>
-      <td width="50%" align="center">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=aditya-dev06&layout=compact&theme=slate&hide_border=true&bg_color=0f172a&title_color=38bdf8&text_color=94a3b8" alt="Top Languages" width="400" />
-      </td>
-    </tr>
-  </table>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=aditya-dev06&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=8b5cf6&icon_color=f59e0b&text_color=c9d1d9&ring_color=8b5cf6&count_private=true" alt="GitHub Stats"/>
+  &nbsp;&nbsp;
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aditya-dev06&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=8b5cf6&text_color=c9d1d9&langs_count=8" alt="Top Languages"/>
 </div>
 
----
+<br/>
 
-### 🤝 Connect & Collaborate
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=aditya-dev06&theme=github-dark-blue&hide_border=true&background=0D1117&stroke=1e293b&ring=8b5cf6&fire=f59e0b&currStreakLabel=8b5cf6&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=64748b" alt="GitHub Streak"/>
+</div>
 
-I am always open to discussing new projects, collaboration in open source, or internship opportunities in AI, ML, Data Science, or DevOps!
+<br/>
 
-* 📧 **Email:** [adityaorinal@gmail.com](mailto:adityaorinal@gmail.com)
-* 💼 **LinkedIn:** [Aditya Prakash on LinkedIn](https://www.linkedin.com/in/aditya-prakash-36792a375)
-* 🌐 **Interactive Portfolio:** *Coming soon! See below for my deployed web portfolio.*
+<!-- ACTIVITY GRAPH -->
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=aditya-dev06&bg_color=0d1117&color=8b5cf6&line=f59e0b&point=c9d1d9&area=true&area_color=8b5cf6&hide_border=true&custom_title=Contribution%20Graph" alt="Activity Graph"/>
+</div>
+
+<br/>
+
+<!-- AREAS OF EXPERTISE -->
+## 🎯 &nbsp;Areas of Expertise
+
+<table align="center">
+  <tr>
+    <td align="center" width="33%">
+      <img src="https://img.shields.io/badge/-📊_Data_Science-0d1117?style=flat-square" alt="DS" /><br/>
+      <sub><b>Data Science & Analytics</b></sub><br/><br/>
+      <sub>Analyzing complex datasets,<br/>building statistical models,<br/>and creating impactful<br/>data visualizations</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://img.shields.io/badge/-🧠_AI_/_ML-0d1117?style=flat-square" alt="AI" /><br/>
+      <sub><b>Artificial Intelligence</b></sub><br/><br/>
+      <sub>Training neural networks,<br/>developing ML pipelines,<br/>and crafting advanced<br/>prompt engineering workflows</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="https://img.shields.io/badge/-⚙️_DevOps-0d1117?style=flat-square" alt="DevOps" /><br/>
+      <sub><b>DevOps & Automation</b></sub><br/><br/>
+      <sub>Containerizing applications,<br/>automating CI/CD pipelines,<br/>and managing Linux<br/>infrastructure</sub>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<!-- CURRENTLY WORKING ON -->
+## 🚀 &nbsp;What I'm Up To
+
+- 🔭 &nbsp;**Building** — ML models for real-world data prediction tasks
+- 🌱 &nbsp;**Deepening** — My expertise in Docker, Kubernetes, and CI/CD automation
+- 🤖 &nbsp;**Exploring** — Large Language Models and advanced prompt engineering
+- 🎯 &nbsp;**Goal** — Land an impactful internship in AI/ML or Data Engineering
+- ⚡ &nbsp;**Fun Fact** — I debug code like a detective solves mysteries 🔍
+
+<br/>
+
+<!-- RANDOM DEV QUOTE -->
+## 💭 &nbsp;Dev Quote of the Day
+
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Random Dev Quote"/>
+</div>
+
+<br/>
+
+<!-- CONTRIBUTION SNAKE -->
+## 🐍 &nbsp;Contribution Snake
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/aditya-dev06/aditya-dev06/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/aditya-dev06/aditya-dev06/output/github-snake.svg" />
+    <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/aditya-dev06/aditya-dev06/output/github-snake-dark.svg" />
+  </picture>
+</div>
+
+<br/>
+
+<!-- CONNECT -->
+## 🤝 &nbsp;Let's Connect
+
+<div align="center">
+  <p>
+    I'm always excited to collaborate on <b>open-source projects</b>, discuss <b>AI/ML research</b>,<br/>
+    or chat about <b>data engineering</b> and <b>DevOps best practices</b>!
+  </p>
+
+  <a href="mailto:adityaorinal@gmail.com"><img src="https://img.shields.io/badge/Drop_me_an_email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>&nbsp;
+  <a href="https://www.linkedin.com/in/aditya-prakash-36792a375"><img src="https://img.shields.io/badge/Connect_on_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+</div>
+
+<br/>
 
 ---
 
 <div align="center">
-  <sub>Designed with ❤️ by Aditya Prakash</sub>
+  <sub>⭐ From <a href="https://github.com/aditya-dev06">aditya-dev06</a> — Built with passion & a lot of ☕</sub>
 </div>

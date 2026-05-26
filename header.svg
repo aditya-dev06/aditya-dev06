@@ -1,172 +1,247 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#1e293b" />
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="30%" stop-color="#0d1117"/>
+      <stop offset="70%" stop-color="#0f1623"/>
+      <stop offset="100%" stop-color="#0d1117"/>
     </linearGradient>
 
-    <!-- Accent Gradients -->
-    <linearGradient id="accent-blue" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="100%" stop-color="#6366f1" />
-    </linearGradient>
-    
-    <linearGradient id="accent-amber" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#f59e0b" />
-      <stop offset="100%" stop-color="#e11d48" />
+    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Soft Glow Filter -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <linearGradient id="name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <linearGradient id="accent1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+
+    <linearGradient id="accent3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+
+    <radialGradient id="orb1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="orb2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="orb3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="glow-sm">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
     </filter>
 
+    <filter id="glow-lg">
+      <feGaussianBlur stdDeviation="8" result="b"/>
+      <feComposite in="SourceGraphic" in2="b" operator="over"/>
+    </filter>
+
+    <clipPath id="rounded">
+      <rect width="1200" height="400" rx="12"/>
+    </clipPath>
+
     <style>
-      @keyframes float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0px); }
-      }
-      @keyframes pulse {
-        0%, 100% { opacity: 0.3; }
-        50% { opacity: 0.8; }
-      }
-      @keyframes rotate-slow {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-      }
-      @keyframes dash {
-        to { stroke-dashoffset: -40; }
-      }
-      .floating-node {
-        animation: float 6s ease-in-out infinite;
-      }
-      .floating-node-delayed {
-        animation: float 6s ease-in-out infinite;
-        animation-delay: 3s;
-      }
-      .pulse-glow {
-        animation: pulse 3s ease-in-out infinite;
-      }
-      .network-line {
-        stroke-dasharray: 8, 4;
-        animation: dash 5s linear infinite;
-      }
-      .title-text {
-        font-family: 'Inter', system-ui, sans-serif;
-        font-weight: 800;
-        fill: #f8fafc;
-        font-size: 42px;
-        letter-spacing: -0.05em;
-      }
-      .subtitle-text {
-        font-family: 'Inter', system-ui, sans-serif;
-        font-weight: 500;
-        fill: #94a3b8;
-        font-size: 18px;
-        letter-spacing: 0.1em;
-      }
-      .badge-text {
-        font-family: 'Inter', system-ui, sans-serif;
-        font-weight: 600;
-        fill: #38bdf8;
-        font-size: 13px;
-      }
+      @keyframes float1 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+      @keyframes float2 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+      @keyframes float3 { 0%,100%{transform:translateY(0) rotate(0deg)} 50%{transform:translateY(-10px) rotate(5deg)} }
+      @keyframes dash-flow { to{stroke-dashoffset:-60} }
+      @keyframes pulse-soft { 0%,100%{opacity:0.4} 50%{opacity:1} }
+      @keyframes spin-slow { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+      @keyframes orbit { from{transform:rotate(0deg) translateX(40px) rotate(0deg)} to{transform:rotate(360deg) translateX(40px) rotate(-360deg)} }
+      @keyframes fade-pulse { 0%,100%{opacity:0.05} 50%{opacity:0.15} }
+
+      .f1{animation:float1 7s ease-in-out infinite}
+      .f2{animation:float2 5s ease-in-out infinite;animation-delay:1s}
+      .f3{animation:float3 9s ease-in-out infinite;animation-delay:2s}
+      .dash{stroke-dasharray:12,8;animation:dash-flow 4s linear infinite}
+      .pulse{animation:pulse-soft 3s ease-in-out infinite}
+      .orbit-dot{animation:orbit 12s linear infinite}
+      .grid-pulse{animation:fade-pulse 8s ease-in-out infinite}
     </style>
   </defs>
 
-  <!-- Background -->
-  <rect width="900" height="320" rx="16" fill="url(#bg-grad)" />
-  <rect width="898" height="318" x="1" y="1" rx="15" fill="none" stroke="#334155" stroke-width="2" />
+  <g clip-path="url(#rounded)">
+    <!-- Deep dark background -->
+    <rect width="1200" height="400" fill="url(#bg)"/>
 
-  <!-- Ambient Light Orbs -->
-  <circle cx="800" cy="80" r="120" fill="#6366f1" opacity="0.12" filter="url(#glow)" />
-  <circle cx="100" cy="240" r="100" fill="#f59e0b" opacity="0.08" filter="url(#glow)" />
-
-  <!-- Interactive Grid Background -->
-  <g stroke="#334155" stroke-width="0.5" opacity="0.3">
-    <path d="M 0 40 L 900 40 M 0 80 L 900 80 M 0 120 L 900 120 M 0 160 L 900 160 M 0 200 L 900 200 M 0 240 L 900 240 M 0 280 L 900 280" />
-    <path d="M 100 0 L 100 320 M 200 0 L 200 320 M 300 0 L 300 320 M 400 0 L 400 320 M 500 0 L 500 320 M 600 0 L 600 320 M 700 0 L 700 320 M 800 0 L 800 320" />
-  </g>
-
-  <!-- Graphic Elements: Data Science & AI Network (Right Side) -->
-  <g transform="translate(620, 160)">
-    <!-- Connections -->
-    <line x1="-120" y1="-50" x2="-40" y2="40" stroke="#475569" stroke-width="1.5" />
-    <line x1="-120" y1="-50" x2="40" y2="-60" stroke="#475569" stroke-width="1.5" />
-    <line x1="-40" y1="40" x2="40" y2="-60" stroke="#475569" stroke-width="1.5" />
-    <line x1="40" y1="-60" x2="120" y2="-20" stroke="#475569" stroke-width="1.5" />
-    <line x1="-40" y1="40" x2="80" y2="70" stroke="#475569" stroke-width="1.5" />
-    <line x1="120" y1="-20" x2="80" y2="70" stroke="#475569" stroke-width="1.5" />
-
-    <!-- Animated Data/Flow line -->
-    <path d="M -120 -50 Q -40 40 80 70" fill="none" stroke="url(#accent-blue)" stroke-width="2.5" class="network-line" />
-    <path d="M 40 -60 Q 120 -20 80 70" fill="none" stroke="url(#accent-amber)" stroke-width="2.5" class="network-line" style="animation-delay: 2.5s;" />
-
-    <!-- Nodes -->
-    <!-- DevOps/Inf Node -->
-    <g class="floating-node" transform="translate(-120, -50)">
-      <circle r="22" fill="#1e293b" stroke="#6366f1" stroke-width="2" />
-      <path d="M-8-4 C-4-8 4-8 8-4 C12 0 12 8 8 4 C4 0 -4 0 -8 -4 Z" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.8"/>
-      <circle r="4" fill="#38bdf8" />
+    <!-- Subtle dot grid -->
+    <g class="grid-pulse" opacity="0.08">
+      <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+        <circle cx="15" cy="15" r="0.8" fill="#64748b"/>
+      </pattern>
+      <rect width="1200" height="400" fill="url(#dots)"/>
     </g>
 
-    <!-- Data Science Node -->
-    <g class="floating-node-delayed" transform="translate(-40, 40)">
-      <circle r="26" fill="#1e293b" stroke="#f59e0b" stroke-width="2" />
-      <!-- Small bar chart representation -->
-      <rect x="-8" y="-10" width="4" height="20" rx="1" fill="#f59e0b" />
-      <rect x="-2" y="-15" width="4" height="25" rx="1" fill="#f59e0b" opacity="0.8" />
-      <rect x="4" y="-5" width="4" height="15" rx="1" fill="#f59e0b" opacity="0.6" />
+    <!-- Ambient orbs -->
+    <circle cx="200" cy="100" r="200" fill="url(#orb1)"/>
+    <circle cx="900" cy="300" r="250" fill="url(#orb2)"/>
+    <circle cx="600" cy="50" r="150" fill="url(#orb3)"/>
+
+    <!-- Decorative horizontal scan line -->
+    <line x1="0" y1="200" x2="1200" y2="200" stroke="url(#line-grad)" stroke-width="0.5"/>
+
+    <!-- ============ RIGHT SIDE: Neural Mesh Visualization ============ -->
+    <g transform="translate(780, 200)">
+      <!-- Connection web -->
+      <g stroke="#1e293b" stroke-width="1">
+        <line x1="-80" y1="-120" x2="60" y2="-80"/>
+        <line x1="60" y1="-80" x2="140" y2="-40"/>
+        <line x1="-80" y1="-120" x2="-40" y2="-20"/>
+        <line x1="-40" y1="-20" x2="60" y2="-80"/>
+        <line x1="-40" y1="-20" x2="80" y2="30"/>
+        <line x1="140" y1="-40" x2="80" y2="30"/>
+        <line x1="80" y1="30" x2="0" y2="100"/>
+        <line x1="-40" y1="-20" x2="-120" y2="60"/>
+        <line x1="-120" y1="60" x2="0" y2="100"/>
+        <line x1="140" y1="-40" x2="200" y2="40"/>
+        <line x1="200" y1="40" x2="80" y2="30"/>
+        <line x1="60" y1="-80" x2="180" y2="-100"/>
+        <line x1="180" y1="-100" x2="200" y2="40"/>
+      </g>
+
+      <!-- Animated data flow paths -->
+      <path d="M-80,-120 Q-40,-20 80,30 T200,40" fill="none" stroke="url(#accent1)" stroke-width="2" class="dash" opacity="0.6"/>
+      <path d="M-120,60 Q0,100 80,30 T180,-100" fill="none" stroke="url(#accent3)" stroke-width="1.5" class="dash" opacity="0.4" style="animation-delay:2s"/>
+
+      <!-- Node: Data Input -->
+      <g class="f1" transform="translate(-80, -120)">
+        <circle r="18" fill="#0d1117" stroke="#3b82f6" stroke-width="1.5"/>
+        <rect x="-5" y="-8" width="3" height="16" rx="1" fill="#3b82f6" opacity="0.9"/>
+        <rect x="-1" y="-12" width="3" height="20" rx="1" fill="#3b82f6" opacity="0.7"/>
+        <rect x="3" y="-4" width="3" height="8" rx="1" fill="#3b82f6" opacity="0.5"/>
+      </g>
+
+      <!-- Node: Processing -->
+      <g class="f2" transform="translate(-40, -20)">
+        <circle r="24" fill="#0d1117" stroke="url(#accent1)" stroke-width="2" filter="url(#glow-sm)"/>
+        <g class="pulse">
+          <circle r="8" fill="none" stroke="#8b5cf6" stroke-width="1"/>
+          <circle r="4" fill="#8b5cf6" opacity="0.8"/>
+        </g>
+        <!-- Orbiting dot -->
+        <g style="transform-origin:0 0">
+          <circle cx="16" cy="0" r="2.5" fill="#3b82f6" class="orbit-dot"/>
+        </g>
+      </g>
+
+      <!-- Node: AI Brain (largest, central) -->
+      <g class="f3" transform="translate(60, -80)">
+        <circle r="30" fill="#0d1117" stroke="url(#accent1)" stroke-width="2" filter="url(#glow-lg)"/>
+        <!-- Brain pattern -->
+        <path d="M-12,-6 Q-6,-14 0,-6 Q6,-14 12,-6" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.7"/>
+        <path d="M-12,2 Q-6,-6 0,2 Q6,-6 12,2" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.5"/>
+        <path d="M-10,8 Q0,0 10,8" fill="none" stroke="#06b6d4" stroke-width="1.2" opacity="0.4"/>
+        <circle r="3" fill="#8b5cf6" class="pulse"/>
+      </g>
+
+      <!-- Node: Model -->
+      <g class="f1" transform="translate(140, -40)" style="animation-delay:3s">
+        <circle r="20" fill="#0d1117" stroke="#10b981" stroke-width="1.5"/>
+        <polygon points="0,-9 8,5 -8,5" fill="none" stroke="#10b981" stroke-width="1.5"/>
+        <circle r="3" fill="#10b981" opacity="0.7"/>
+      </g>
+
+      <!-- Node: Deploy -->
+      <g class="f2" transform="translate(200, 40)" style="animation-delay:4s">
+        <circle r="16" fill="#0d1117" stroke="#06b6d4" stroke-width="1.5"/>
+        <path d="M-5,-3 L0,-8 L5,-3 M0,-8 L0,6" fill="none" stroke="#06b6d4" stroke-width="1.5"/>
+      </g>
+
+      <!-- Node: Output -->
+      <g class="f3" transform="translate(80, 30)" style="animation-delay:1.5s">
+        <circle r="20" fill="#0d1117" stroke="url(#accent2)" stroke-width="1.5"/>
+        <path d="M0,-7 L2,-2 L7,0 L2,2 L0,7 L-2,2 L-7,0 L-2,-2 Z" fill="#f59e0b" opacity="0.8"/>
+      </g>
+
+      <!-- Node: Feedback -->
+      <g class="f1" transform="translate(-120, 60)" style="animation-delay:2.5s">
+        <circle r="16" fill="#0d1117" stroke="#f59e0b" stroke-width="1.5"/>
+        <path d="M-5,0 A5,5 0 1,1 5,0" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+        <path d="M5,0 L2,-3 M5,0 L2,3" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+      </g>
+
+      <!-- Node: Insights -->
+      <g class="f2" transform="translate(0, 100)" style="animation-delay:3.5s">
+        <circle r="14" fill="#0d1117" stroke="#e11d48" stroke-width="1.5"/>
+        <circle r="4" fill="#e11d48" opacity="0.6" class="pulse"/>
+      </g>
+
+      <!-- Node: Archive -->
+      <g class="f3" transform="translate(180, -100)" style="animation-delay:0.5s">
+        <circle r="14" fill="#0d1117" stroke="#64748b" stroke-width="1"/>
+        <rect x="-4" y="-5" width="8" height="10" rx="1.5" fill="none" stroke="#64748b" stroke-width="1"/>
+      </g>
     </g>
 
-    <!-- AI/ML Node (Central Brain) -->
-    <g class="floating-node" transform="translate(40, -60)">
-      <circle r="30" fill="#1e293b" stroke="url(#accent-blue)" stroke-width="2.5" filter="url(#glow)"/>
-      <path d="M-10-8 A10 10 0 1 1 10 -8 A10 10 0 1 1 -10 -8" fill="none" stroke="#6366f1" stroke-width="1.5" />
-      <circle cx="0" cy="0" r="6" fill="#38bdf8" class="pulse-glow" />
+    <!-- ============ LEFT SIDE: Text Content ============ -->
+    <g transform="translate(80, 120)">
+      <!-- Overline -->
+      <text font-family="'SF Mono','Fira Code',monospace" font-size="13" fill="#64748b" letter-spacing="0.15em">
+        B.TECH CSE — DATA SCIENCE SPECIALIZATION
+      </text>
+
+      <!-- Main name -->
+      <text y="60" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="56" font-weight="800" fill="url(#name-grad)" letter-spacing="-0.03em">
+        Aditya Prakash
+      </text>
+
+      <!-- Accent underline -->
+      <rect y="78" width="380" height="3" rx="1.5" fill="url(#accent1)" opacity="0.7"/>
+
+      <!-- Subtitle -->
+      <text y="110" font-family="'Inter',system-ui,sans-serif" font-size="17" fill="#94a3b8" font-weight="400">
+        Turning data into intelligence, models into products.
+      </text>
+
+      <!-- Domain pills -->
+      <g transform="translate(0, 135)">
+        <!-- Pill 1: Data Science -->
+        <g>
+          <rect width="120" height="30" rx="15" fill="#0d1117" stroke="#f59e0b" stroke-width="1" opacity="0.8"/>
+          <text x="14" y="20" font-family="'Inter',system-ui,sans-serif" font-size="12" fill="#f59e0b" font-weight="600">📊 Data Science</text>
+        </g>
+        <!-- Pill 2: AI/ML -->
+        <g transform="translate(132, 0)">
+          <rect width="88" height="30" rx="15" fill="#0d1117" stroke="#8b5cf6" stroke-width="1" opacity="0.8"/>
+          <text x="14" y="20" font-family="'Inter',system-ui,sans-serif" font-size="12" fill="#8b5cf6" font-weight="600">🧠 AI / ML</text>
+        </g>
+        <!-- Pill 3: DevOps -->
+        <g transform="translate(232, 0)">
+          <rect width="95" height="30" rx="15" fill="#0d1117" stroke="#06b6d4" stroke-width="1" opacity="0.8"/>
+          <text x="14" y="20" font-family="'Inter',system-ui,sans-serif" font-size="12" fill="#06b6d4" font-weight="600">⚙️ DevOps</text>
+        </g>
+        <!-- Pill 4: Prompt Eng -->
+        <g transform="translate(339, 0)">
+          <rect width="140" height="30" rx="15" fill="#0d1117" stroke="#10b981" stroke-width="1" opacity="0.8"/>
+          <text x="14" y="20" font-family="'Inter',system-ui,sans-serif" font-size="12" fill="#10b981" font-weight="600">✨ Prompt Engineer</text>
+        </g>
+      </g>
     </g>
 
-    <!-- Model Deployment Node -->
-    <g class="floating-node-delayed" transform="translate(120, -20)">
-      <circle r="20" fill="#1e293b" stroke="#10b981" stroke-width="2" />
-      <polygon points="0,-8 7,5 -7,5" fill="none" stroke="#10b981" stroke-width="1.5" />
-    </g>
-
-    <!-- Output/Insight Node -->
-    <g class="floating-node" transform="translate(80, 70)">
-      <circle r="24" fill="#1e293b" stroke="#e11d48" stroke-width="2" />
-      <!-- Star/Insight shape -->
-      <path d="M0,-8 L2,-2 L8,0 L2,2 L0,8 L-2,2 L-8,0 L-2,-2 Z" fill="#e11d48" />
-    </g>
-  </g>
-
-  <!-- Left Side: Professional Headline -->
-  <g transform="translate(60, 95)">
-    <!-- Subtitle/Specialization -->
-    <text class="subtitle-text" x="0" y="0">COMPUTER SCIENCE &amp; ENGINEERING</text>
-    
-    <!-- Main Name -->
-    <text class="title-text" x="0" y="45">Aditya Prakash</text>
-
-    <!-- Accent Line -->
-    <line x1="0" y1="65" x2="300" y2="65" stroke="url(#accent-blue)" stroke-width="4" stroke-linecap="round" />
-
-    <!-- Current learning domains badges -->
-    <g transform="translate(0, 95)">
-      <!-- DevOps -->
-      <rect x="0" y="0" width="75" height="26" rx="13" fill="#1e293b" stroke="#334155" stroke-width="1" />
-      <text class="badge-text" x="15" y="17" fill="#38bdf8">DevOps</text>
-
-      <!-- AI/ML -->
-      <rect x="85" y="0" width="70" height="26" rx="13" fill="#1e293b" stroke="#334155" stroke-width="1" />
-      <text class="badge-text" x="101" y="17" fill="#6366f1">AI/ML</text>
-
-      <!-- Data Science -->
-      <rect x="165" y="0" width="110" height="26" rx="13" fill="#1e293b" stroke="#334155" stroke-width="1" />
-      <text class="badge-text" x="178" y="17" fill="#f59e0b">Data Science</text>
-    </g>
+    <!-- Bottom decorative line -->
+    <rect y="394" width="1200" height="6" fill="url(#accent1)" opacity="0.4"/>
   </g>
 </svg>
