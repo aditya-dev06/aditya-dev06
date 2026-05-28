@@ -86,6 +86,15 @@ fun_fact: "I can prompt-engineer an AI faster than I can cook instant noodles �
 
 <br/>
 
+<!-- GITHUB TROPHIES -->
+## 🏆 &nbsp;GitHub Trophies
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=aditya-dev06&theme=radical&no-bg=true&margin-w=15" alt="GitHub Trophies" />
+</div>
+
+<br/>
+
 <!-- GITHUB STATS -->
 ## 📊 &nbsp;GitHub Analytics
 
