@@ -73,17 +73,6 @@ currently_learning: ["Docker", "CI/CD Pipelines", "Neural Networks", "Distribute
 
 <br/>
 
-<!-- GITHUB STATS -->
-## 📊 &nbsp;GitHub Analytics
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=aditya-dev06&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=8b5cf6&icon_color=f59e0b&text_color=c9d1d9&ring_color=8b5cf6&count_private=true" alt="GitHub Stats"/>
-  &nbsp;&nbsp;
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=aditya-dev06&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=8b5cf6&text_color=c9d1d9&langs_count=8" alt="Top Languages"/>
-</div>
-
-<br/>
-
 <!-- CONNECT -->
 ## 🤝 &nbsp;Let's Connect
 
